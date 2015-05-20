@@ -15,7 +15,7 @@ $ sudo apt-get install oracle-java8-installer
 Add following code to your e.g. `.bash_profile`
 ```bash
 # For Apache Spark
-JAVA_HOME=/usr/lib/jvm/java-8-oracle
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 ```
 
 Install Apache Spark
@@ -23,6 +23,7 @@ Install Apache Spark
 use [download instructions](https://spark.apache.org/downloads.html) to download spark
 ```bash
 sudo su
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 cd /usr/local/src
 git clone git://github.com/apache/spark.git -b branch-1.3
 ```
