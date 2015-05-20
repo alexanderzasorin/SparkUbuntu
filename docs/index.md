@@ -27,7 +27,7 @@ export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 cd /usr/local/src
 git clone git://github.com/apache/spark.git -b branch-1.3
 ```
-use [install instructions](https://spark.apache.org/documentation.html) to install spark
+use [install instructions](https://spark.apache.org/documentation.html) to install spark (*very long*)
 ```bash
 /usr/local/src/spark/make-distribution.sh --skip-java-test
 ```
@@ -78,6 +78,6 @@ ipython notebook --profile=pyspark
 `sc` variable should be available
 ```ipython
 In [1]: sc
-Out[1]: <pyspark.context.SparkContext at 0x10a982b10>
+Out[1]: <pyspark.context.SparkContext at 0x7f8f27368550>
 ```
 
